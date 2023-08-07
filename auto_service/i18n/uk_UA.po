@@ -1,0 +1,863 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* auto_service
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-01 09:28+0000\n"
+"PO-Revision-Date: 2023-08-01 09:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: auto_service
+#: model:ir.actions.report,print_report_name:auto_service.action_report_invoice
+msgid "'Invoice - %s' % (object.name)"
+msgstr "'Рахунок - %s' % (object.name)"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.work_performed
+msgid "0.0"
+msgstr ""
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.invoice_total
+msgid "0.00"
+msgstr ""
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.logo_template
+msgid ""
+"<span style=\"font-weight: 900;\">No.</span>\n"
+"                    CASH"
+msgstr ""
+"<span style=\"font-weight: 900;\">No.</span>\n"
+"                    Готівка"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.invoice_total
+msgid "<span>Invoice Total</span>"
+msgstr "<span>Всього по рахунку</span>"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.work_performed
+msgid "<span>Labour SubTotal</span>"
+msgstr "Послуги"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_equipment__active
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__active
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic__active
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__active
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__active
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__active
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle_manufacturer__active
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__active
+msgid "Active"
+msgstr ""
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.auto_service_mechanic_form
+#: model_terms:ir.ui.view,arch_db:auto_service.auto_service_vehicle_form
+msgid "Appointment/visit history"
+msgstr "Iсторiя замовлень"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.auto_service_visit_act_window
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_appointment_visit
+msgid "Appointment/visit"
+msgstr "Замовлення"
+
+#. module: auto_service
+#: model:ir.model,name:auto_service.model_auto_service_equipment
+msgid "Autoservice equipment"
+msgstr "Автосервіс обладнання"
+
+#. module: auto_service
+#: model:ir.model,name:auto_service.model_auto_service_job
+msgid "Auto service jobs and required equipment"
+msgstr "Автосервіс роботи та необхідне обладнання"
+
+#. module: auto_service
+#: model:ir.model,name:auto_service.model_auto_service_mechanic
+msgid "Auto service mechanics"
+msgstr "Автосервіс механіки"
+
+#. module: auto_service
+#: model:ir.model,name:auto_service.model_auto_service_timetable_equipment
+#: model:ir.model,name:auto_service.model_auto_service_timetable_mechanic
+msgid "Auto service mechanics time table"
+msgstr "Автосервіс розклад механіків"
+
+#. module: auto_service
+#: model:ir.model,name:auto_service.model_auto_service_vehicle_manufacturer
+msgid "Auto service vehicle manufacturers"
+msgstr "Автосервіс виробники обладнання"
+
+#. module: auto_service
+#: model:ir.model,name:auto_service.model_auto_service_vehicle
+msgid "Auto service vehicles"
+msgstr "Автосервіс транспортні засоби"
+
+#. module: auto_service
+#: model:ir.model,name:auto_service.model_auto_service_job_permitted
+msgid "Auto service woks permitted for mechanic"
+msgstr "Автосервіс дозволені роботи"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__car_mileage
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__car_mileage
+msgid "Car mileage"
+msgstr "Пробіг"
+
+#. module: auto_service
+#: model:ir.ui.menu,name:auto_service.auto_service_menu_root
+msgid "Car service and MOT station"
+msgstr "Станція технічного обслуговування"
+
+#. module: auto_service
+#: model:ir.model,name:auto_service.model_auto_service_visit
+msgid "Car service visit"
+msgstr "Замовлення"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.auto_service_visit_action
+msgid "Car service visits"
+msgstr "Замовлення"
+
+#. module: auto_service
+#: model:res.partner.category,name:auto_service.res_partner_category_15
+msgid "Car services"
+msgstr "Послуги"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.logo_template
+msgid "Cash Customer"
+msgstr "Платник"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.new_timetable_form
+msgid "Close"
+msgstr "Скасувати"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.invoice_total
+msgid "Code"
+msgstr "Код"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__comment
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__comment
+msgid "Comment"
+msgstr "Коментар"
+
+#. module: auto_service
+#: model:ir.model,name:auto_service.model_res_partner
+msgid "Contact"
+msgstr "Контакт"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.action_open_wizard
+#: model:ir.model,name:auto_service.model_new_timetable_wizard
+msgid "Create new mechanic timetable"
+msgstr "Створити новий розклад"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_equipment__create_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__create_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job_permitted__create_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic__create_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__create_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__create_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__create_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle_manufacturer__create_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__create_uid
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__create_uid
+#: model:ir.model.fields,field_description:auto_service.field_timetable_line_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_equipment__create_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__create_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job_permitted__create_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic__create_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__create_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__create_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__create_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle_manufacturer__create_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__create_date
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__create_date
+#: model:ir.model.fields,field_description:auto_service.field_timetable_line_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: auto_service
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_custom_vehicles
+msgid "Custom vehicles"
+msgstr "Транспорт клієнтів"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__customer_id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__customer_id
+msgid "Customer"
+msgstr "Клієнт"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.advisories
+msgid "Customer Advisories"
+msgstr "Рекомендації клієнту"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_res_partner__customer_details
+#: model:ir.model.fields,field_description:auto_service.field_res_users__customer_details
+msgid "Customer details"
+msgstr ""
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.auto_service_visit_form
+msgid "Customer, vehicle"
+msgstr "Клієнт, транспортний засіб"
+
+#. module: auto_service
+#: model:ir.ui.menu,name:auto_service.res_partner_menu_customer
+msgid "Customers"
+msgstr "Клієнти"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__visit_date
+#: model:ir.model.fields,field_description:auto_service.field_timetable_line_wizard__date
+msgid "Date"
+msgstr "Дата"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__date_next_MOT
+msgid "Date of next MOT"
+msgstr "Дата наступного ТО"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.auto_service_visit_form
+msgid "Date, time"
+msgstr "Дата, час"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.logo_template
+msgid "Date:"
+msgstr "Дата"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__problem
+msgid "Description of the problem(s)"
+msgstr "Опис проблеми"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_equipment__display_name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__display_name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job_permitted__display_name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic__display_name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__display_name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__display_name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__display_name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle_manufacturer__display_name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__display_name
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__display_name
+#: model:ir.model.fields,field_description:auto_service.field_timetable_line_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__duration
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__duration
+msgid "Duration,hours"
+msgstr "Тривалість, год"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.logo_template
+msgid "Email:"
+msgstr "Email:"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__end_date
+msgid "End date"
+msgstr "по"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.auto_service_equipment_act_window
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__equipment_id
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_equipment
+msgid "Equipment"
+msgstr "Обладнання"
+
+#. module: auto_service
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_equipment_maintenance
+msgid "Equipment maintenance"
+msgstr "Обслуговування обладнання"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.auto_service_timetable_equipment_act_window
+#: model_terms:ir.ui.view,arch_db:auto_service.auto_service_timetable_equipment_calendar
+msgid "Equipment maintenance timetable"
+msgstr "Розклад обслуговування обладнання"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__equipment_id
+msgid "Equipment required"
+msgstr "Необхідне обладнання"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__start_time
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__start_time
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__start_time_int
+#: model:ir.model.fields,field_description:auto_service.field_timetable_line_wizard__start_time_int
+msgid "From"
+msgstr "З"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.work_performed
+msgid "HRS"
+msgstr ""
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__start_time_int
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__start_time_int
+msgid "Hours from"
+msgstr "З"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__end_time_int
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__start_time_int
+msgid "Hours to"
+msgstr "по"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_equipment__id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job_permitted__id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic__id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle_manufacturer__id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__id
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__id
+#: model:ir.model.fields,field_description:auto_service.field_timetable_line_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: auto_service
+#: model:ir.actions.report,name:auto_service.action_report_invoice
+#: model_terms:ir.ui.view,arch_db:auto_service.logo_template
+msgid "Invoice"
+msgstr "Рахунок-фактура"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.invoice_total
+msgid "Invoice Total"
+msgstr "Всього по рахунку"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__is_done
+msgid "Is Done"
+msgstr "Виконано"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_res_partner__is_auto_service_customer
+#: model:ir.model.fields,field_description:auto_service.field_res_users__is_auto_service_customer
+msgid "Is autoservice customer"
+msgstr "Є клієнтом сервісу"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job_permitted__job_id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic__job_ids
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__job_id
+msgid "Job"
+msgstr "Робота"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__job_recommended_id
+msgid "Job recommended"
+msgstr "Рекомендована робота"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.auto_service_job_permitted_act_window
+msgid "Jobs permitted"
+msgstr "Дозволені роботи"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.invoice_total
+#: model_terms:ir.ui.view,arch_db:auto_service.work_performed
+msgid "Labour"
+msgstr "Послуга"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_equipment____last_update
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job____last_update
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job_permitted____last_update
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic____last_update
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment____last_update
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic____last_update
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle____last_update
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle_manufacturer____last_update
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit____last_update
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard____last_update
+#: model:ir.model.fields,field_description:auto_service.field_timetable_line_wizard____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_equipment__write_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__write_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job_permitted__write_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic__write_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__write_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__write_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__write_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle_manufacturer__write_uid
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__write_uid
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__write_uid
+#: model:ir.model.fields,field_description:auto_service.field_timetable_line_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_equipment__write_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__write_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job_permitted__write_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic__write_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__write_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__write_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__write_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle_manufacturer__write_date
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__write_date
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__write_date
+#: model:ir.model.fields,field_description:auto_service.field_timetable_line_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.logo_template
+msgid "Logo"
+msgstr ""
+
+#. module: auto_service
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_vehicles_manufacturers
+msgid "Manufacturers"
+msgstr "Виробники (марки)"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__mechanic_ids
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job_permitted__mechanic_id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__mechanic_id
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__mechanic_id
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__mechanic_id
+#: model:ir.model.fields,field_description:auto_service.field_timetable_line_wizard__mechanic_id
+msgid "Mechanic"
+msgstr "Механік"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.auto_service_timetable_mechanic_calendar
+msgid "Mechanic's timetable"
+msgstr "Розклад механіка"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.auto_service_visit_form
+msgid "Mechanic, job"
+msgstr "Механік, робота"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.new_timetable_form
+msgid "Mechanic, period"
+msgstr "Механік, період"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.auto_service_mechanic_act_window
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_mechanic
+msgid "Mechanics"
+msgstr "Механіки"
+
+#. module: auto_service
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_timetable
+msgid "Mechanics timetable"
+msgstr "Розклад механіків"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.vehicle_info
+msgid "Mileage:"
+msgstr "Пробіг"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__model
+msgid "Model"
+msgstr "Модель"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_equipment__name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic__name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle_manufacturer__name
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__name
+msgid "Name"
+msgstr "Найменування"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.invoice_total
+#: model_terms:ir.ui.view,arch_db:auto_service.work_performed
+msgid "Net Total"
+msgstr "Всього без ПДВ"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.auto_service_create_visit_from_customer_action
+#: model:ir.actions.act_window,name:auto_service.auto_service_create_visit_from_vehicle_action
+msgid "New appointment"
+msgstr "Нове замовлення"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.new_timetable_form
+msgid "New timetable"
+msgstr "Новий розклад"
+
+#. module: auto_service
+#: model:ir.model,name:auto_service.model_timetable_line_wizard
+msgid "New timetable lines"
+msgstr "Новий розклад"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.invoice_total
+msgid "Parts"
+msgstr "Запчастини"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__price
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__price
+msgid "Price,£"
+msgstr "Ціна,£"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.invoice_total
+msgid "Rate %"
+msgstr "Податок %"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__recommendation
+msgid "Recommendation"
+msgstr ""
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__registration_number
+msgid "Registration"
+msgstr "№ держ.реєстрації"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.vehicle_info
+msgid "Registration:"
+msgstr "Реєстрація"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_job__equipment_id
+msgid "Required equipment"
+msgstr "Необхідне обладнання"
+
+#. module: auto_service
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_service
+msgid "Services"
+msgstr "Послуги"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.auto_service_job_act_window
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_job
+msgid "Services and jobs"
+msgstr "Послуги та роботи"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__start_date
+msgid "Start date"
+msgstr "Дата з"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__state
+msgid "State"
+msgstr "Стан"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__state_not_delete
+msgid "State Not Delete"
+msgstr "Не видаляти"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.logo_template
+msgid "Technician:"
+msgstr "Виконавець:"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.logo_template
+msgid "Tel:"
+msgstr "Тел:"
+
+#. module: auto_service
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_time_control
+msgid "Time table and appoinments"
+msgstr "Розклад та замовлення"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__start_time
+msgid "Time_date"
+msgstr "Дата, час"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__start_time_int
+msgid "Time_int"
+msgstr "Дата, час"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_equipment__timetable_ids
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic__timetable_ids
+msgid "Timetable"
+msgstr ""
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__timetable_line_ids
+msgid "Timetable Line"
+msgstr "Розклад"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.auto_service_timetable_mechanic_act_window
+msgid "Timetable mechanic"
+msgstr "Розклад механiкiв"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_equipment__end_time
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_timetable_mechanic__end_time
+#: model:ir.model.fields,field_description:auto_service.field_timetable_line_wizard__end_time_int
+msgid "To"
+msgstr "по"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.work_performed
+msgid "Unit Price"
+msgstr "Ціна"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.invoice_total
+msgid "VAT"
+msgstr "ПДВ"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.work_performed
+msgid "VAT %"
+msgstr "ПДВ %"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.invoice_total
+msgid "VAT Total"
+msgstr "ПДВ"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__VIN
+msgid "VIN"
+msgstr "VIN"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.vehicle_info
+msgid "VIN:"
+msgstr "VIN:"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_visit__vehicle_id
+#: model_terms:ir.ui.view,arch_db:auto_service.vehicle_info
+msgid "Vehicle"
+msgstr "Транспортний засiб"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__vehicle_make_id
+msgid "Vehicle make"
+msgstr "Марка"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.auto_service_vehicle_manufacturer_act_window
+msgid "Vehicle manufacturers"
+msgstr "Виробники (марки)"
+
+#. module: auto_service
+#: model:ir.actions.act_window,name:auto_service.auto_service_vehicle_act_window
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_vehicles
+msgid "Vehicles"
+msgstr "Транспортний засiб"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_equipment__visit_ids
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_mechanic__visit_ids
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__visit_ids
+msgid "Visit"
+msgstr "Замовлення"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.auto_service_visit_tree
+msgid "Visit done"
+msgstr "Виконано"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.auto_service_visit_calendar
+msgid "Visits"
+msgstr "Візити"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.logo_template
+msgid "Web:"
+msgstr "Web:"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.work_performed
+msgid "Work performed"
+msgstr "Виконанi роботи"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.new_timetable_form
+msgid "Working hours"
+msgstr "Робочi години"
+
+#. module: auto_service
+#: model_terms:ir.ui.view,arch_db:auto_service.auto_service_mechanic_form
+msgid "Works permitted"
+msgstr "Дозволенi роботи"
+
+#. module: auto_service
+#: model:ir.ui.menu,name:auto_service.autoservice_menu_job_permitted
+msgid "Works permitted for mechanics"
+msgstr "Дозволенi роботи"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_auto_service_vehicle__year_manufacture
+msgid "Year of manufacture"
+msgstr "Рiк випуску"
+
+#. module: auto_service
+#: model:ir.model.fields,field_description:auto_service.field_new_timetable_wizard__end_time_int
+msgid "to"
+msgstr "по"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_MOT
+msgid "MOT"
+msgstr "ТО"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_full_service
+msgid "Full service"
+msgstr "Повне ТО"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_Diagnostic
+msgid "Diagnostic check"
+msgstr "Діагностика"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_oil_filter
+msgid "Oil and Filter Change"
+msgstr "Заміна масла та фільтрів"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_brake_fluid
+msgid "Brake Fluid Replacement"
+msgstr "Заміна гальмівної речовини"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_coolant
+msgid "Coolant Chang"
+msgstr "Заміна охолоджувальної рідини"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_wheel_alignment
+msgid "Wheel alignment"
+msgstr "Розвал сходження"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_painting
+msgid "Painting"
+msgstr "Фарбування"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_general_repair
+msgid "General repair"
+msgstr "Загальний ремонт"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_headlight
+msgid "Headlight adjustment"
+msgstr "Регулювання фар"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_straightening
+msgid "Straightening (after damage)"
+msgstr "Рихтування"
+
+#. module: auto_service
+#: model:auto_service.job,name:auto_service.auto_service_job_engine_repair
+msgid "Engine repair"
+msgstr "Ремонт двигуна"
+
+#. module: auto_service
+#: model:auto_service.job,comment:auto_service.auto_service_job_painting
+#: model:auto_service.job,comment:auto_service.auto_service_job_general_repair
+#: model:auto_service.job,comment:auto_service.auto_service_job_straightening
+msgid "Get an estimate"
+msgstr "Потребує оцінки"
+
+#. module: auto_service
+#: model:auto_service.equipment,name:auto_service.auto_service_equipment_1
+msgid "Lifting stand #1"
+msgstr "Підйомник #1"
+
+#. module: auto_service
+#: model:auto_service.equipment,name:auto_service.auto_service_equipment_2
+msgid "Lifting stand #2"
+msgstr "Підйомник #2"
+
+#. module: auto_service
+#: model:auto_service.equipment,name:auto_service.auto_service_equipment_3
+msgid "Wheel alignment stand"
+msgstr "Стенд регулювання розвал сходження"
+
+#. module: auto_service
+#: model:auto_service.equipment,name:auto_service.auto_service_equipment_4
+msgid "Painting booth"
+msgstr "Камера фарбування"
+
+#. module: auto_service
+#: model:auto_service.equipment,name:auto_service.auto_service_equipment_5
+msgid "Headlight stand"
+msgstr "Стенд регулювання світла"
+
+#. module: auto_service
+#: model:auto_service.mechanic,name:auto_service.auto_service_mechanic_1
+msgid "Petrenko Ivan"
+msgstr "Петренко Іван"
+
+#. module: auto_service
+#: model:auto_service.mechanic,name:auto_service.auto_service_mechanic_2
+msgid "Dovgodko Viktor"
+msgstr "Довгодько Віктор"
+
+#. module: auto_service
+#: model:auto_service.mechanic,name:auto_service.auto_service_mechanic_3
+msgid "Dianov Pavlo"
+msgstr "Діанов Павло"
+
+#. module: auto_service
+#: model:auto_service.mechanic,name:auto_service.auto_service_mechanic_4
+msgid "Tarasov Olexiy"
+msgstr "Тарасов Олексій"
+
+#. module: auto_service
+#: model:auto_service.res.partner,name:auto_service.res_partner_auto_service_1
+msgid "Olena Postnikova"
+msgstr "Олена Постнікова"

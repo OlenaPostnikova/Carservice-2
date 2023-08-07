@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="auto_service_vehicle_volvo" model="auto_service.vehicle" forcecreate="True">
+        <field name="name">Volvo V40 Cross Country AA7541XC </field>
+        <field name="registration_number">AA7541XC</field>
+        <field name="model">V40 Cross Country</field>
+        <field name="VIN">YV1MZ845BF2089641</field>
+        <field name="car_mileage">45000</field>
+        <field name="vehicle_make_id" ref="auto_service_vehicle_manufacturer_volvo"/>
+        <field name="customer_id" ref="res_partner_auto_service_1"/>
+    </record>
+    <record id="auto_service_vehicle_mercedes" model="auto_service.vehicle" forcecreate="True">
+        <field name="name">Mercedes GLE AA8422KO</field>
+        <field name="registration_number">AA8422KO</field>
+        <field name="model">GLE</field>
+        <field name="VIN">AB1MY845BF20510341</field>
+        <field name="car_mileage">90000</field>
+        <field name="vehicle_make_id" ref="auto_service_vehicle_manufacturer_mercedes"/>
+        <field name="customer_id" ref="res_partner_auto_service_2"/>
+    </record>
+    <record id="auto_service_vehicle_ford" model="auto_service.vehicle" forcecreate="True">
+        <field name="name">Ford Mondeo ВА5529KO</field>
+        <field name="registration_number">ВА5529KO</field>
+        <field name="model">Mondeo</field>
+        <field name="VIN">AB1MY845BF20510341</field>
+        <field name="car_mileage">77000</field>
+        <field name="vehicle_make_id" ref="auto_service_vehicle_manufacturer_ford"/>
+        <field name="customer_id" ref="res_partner_auto_service_3"/>
+    </record>
+</odoo>

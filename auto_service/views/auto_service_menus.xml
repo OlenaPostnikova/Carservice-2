@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem name="Car service and MOT station"
+              id="auto_service_menu_root"
+              web_icon="auto_service,static/description/icon.png"
+              sequence="25"/>
+
+    <menuitem
+            id="autoservice_menu_custom_vehicles"
+            name="Custom vehicles"
+            parent="auto_service_menu_root"
+            sequence="20"/>
+    <menuitem
+            id="autoservice_menu_vehicles"
+            name="Vehicles"
+            parent="autoservice_menu_custom_vehicles"
+            action="auto_service.auto_service_vehicle_act_window"
+            sequence="1"/>
+    <menuitem
+            id="res_partner_menu_customer"
+            name="Customers"
+            parent="autoservice_menu_custom_vehicles"
+            action="base.action_partner_form"
+            sequence="2"/>
+
+    <menuitem
+            id="autoservice_menu_vehicles_manufacturers"
+            name="Manufacturers"
+            parent="autoservice_menu_custom_vehicles"
+            action="auto_service.auto_service_vehicle_manufacturer_act_window"
+            sequence="5"/>
+
+    <menuitem
+            id="autoservice_menu_service"
+            name="Services"
+            parent="auto_service_menu_root"
+            sequence="25"/>
+
+    <menuitem
+            id="autoservice_menu_equipment"
+            name="Equipment"
+            parent="autoservice_menu_service"
+            action="auto_service.auto_service_equipment_act_window"
+            sequence="1"/>
+    <menuitem
+            id="autoservice_menu_job"
+            name="Services and jobs"
+            parent="autoservice_menu_service"
+            action="auto_service.auto_service_job_act_window"
+            sequence="2"/>
+    <menuitem
+            id="autoservice_menu_mechanic"
+            name="Mechanics"
+            parent="autoservice_menu_service"
+            action="auto_service.auto_service_mechanic_act_window"
+            sequence="3"/>
+    <menuitem
+            id="autoservice_menu_job_permitted"
+            name="Works permitted for mechanics"
+            parent="autoservice_menu_service"
+            action="auto_service.auto_service_job_permitted_act_window"
+            sequence="4"/>
+
+    <menuitem
+            id="autoservice_menu_time_control"
+            name="Time table and appoinments"
+            parent="auto_service_menu_root"
+            sequence="25"/>
+     <menuitem
+            id="autoservice_menu_appointment_visit"
+            name="Appointments/Visits"
+            parent="autoservice_menu_time_control"
+            action="auto_service.auto_service_visit_act_window"
+            sequence="1"/>
+    <menuitem
+            id="autoservice_menu_timetable"
+            name="Mechanics timetable"
+            parent="autoservice_menu_time_control"
+            action="auto_service_timetable_mechanic_act_window"
+            sequence="2"/>
+   <menuitem
+            id="autoservice_menu_equipment_maintenance"
+            name="Equipment maintenance"
+            parent="autoservice_menu_time_control"
+            action="auto_service_timetable_equipment_act_window"
+            sequence="3"/>
+</odoo>

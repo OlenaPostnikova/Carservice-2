@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="new_timetable_form" model="ir.ui.view">
+        <field name="name">new.timetable.form</field>
+        <field name="model">new.timetable.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group string="Mechanic, period">
+                        <field name="mechanic_id"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                    </group>
+                    <group>
+                        <group string="Working hours">
+                            <field name="start_time_int"/>
+                            <field name="end_time_int"/>
+                        </group>
+                    </group>
+                </sheet>
+                <footer>
+                    <button string="New timetable"
+                            name="action_create"
+                            class="btn-primary"
+                            type="object"/>
+                    <button special="cancel" class="oe_link" string="Close"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_open_wizard"
+            model="ir.actions.act_window">
+        <field name="name">Create new mechanic timetable</field>
+        <field name="res_model">new.timetable.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="model_auto_service_mechanic"/>
+        <field name="binding_view_types">form</field>
+        <field name="binding_type">action</field>
+    </record>
+
+</odoo>

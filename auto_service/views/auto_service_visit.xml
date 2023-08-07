@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="auto_service_visit_tree" model="ir.ui.view">
+        <field name="name">auto_service.visit.tree</field>
+        <field name="model">auto_service.visit</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="active"/>
+                <field name="visit_date"/>
+                <field name="vehicle_id"/>
+                <field name="customer_id"/>
+                <field name="job_id"/>
+                <field name="duration"/>
+                <field name="price"/>
+                <field name="customer_id"/>
+                <field name="mechanic_id"/>
+                <field name="equipment_id"/>
+                <field name="is_done"/>
+                <field name="problem"/>
+                <field name="car_mileage"/>
+                <field name="state_not_delete" string="Visit done"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="auto_service_visit_form" model="ir.ui.view">
+        <field name="name">auto_service.visit.form</field>
+        <field name="model">auto_service.visit</field>
+        <field name="arch" type="xml">
+            <form>
+                <group string="Date, time">
+                    <group>
+                        <group>
+                            <field name="visit_date"/>
+                        </group>
+                        <group>
+                            <field name="start_time_int"/>
+                            <field name="end_time_int"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="start_time"/>
+                        <field name="end_time"/>
+                    </group>
+                </group>
+                <group>
+                    <group string="Customer, vehicle">
+                        <field name="vehicle_id"/>
+                        <field name="customer_id"/>
+                        <field name="problem"/>
+                        <field name="car_mileage"/>
+                        <field name="state"/>
+                        <field name="is_done"/>
+                        <field name="active"/>
+                    </group>
+                    <group string="Mechanic, job">
+                        <group>
+                            <field name="job_id"/>
+                            <field name="mechanic_id"/>
+                            <field name="equipment_id"/>
+                            <field name="job_recommended_id"/>
+                            <field name="recommendation"/>
+                            <field name="comment"/>
+                        </group>
+                        <group>
+                            <field name="duration"/>
+                            <field name="price"/>
+                        </group>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="auto_service_visit_action" model="ir.actions.act_window">
+        <field name="name">Car service visits</field>
+        <field name="res_model">auto_service.visit</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('customer_id','=', active_id)]</field>
+    </record>
+
+    <record id="auto_service_create_visit_from_customer_action" model="ir.actions.act_window">
+        <field name="name">New appointment</field>
+        <field name="res_model">auto_service.visit</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="context">{'default_customer_id': active_id}</field>
+    </record>
+
+    <record id="auto_service_create_visit_from_vehicle_action" model="ir.actions.act_window">
+        <field name="name">New appointment</field>
+        <field name="res_model">auto_service.visit</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+        <field name="context">{'default_vehicle_id': active_id}</field>
+    </record>
+
+    <record id="auto_service_create_visit_from_job_action" model="ir.actions.act_window">
+        <field name="name">New appointment</field>
+        <field name="res_model">auto_service.visit</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <record id="auto_service_visit_calendar" model="ir.ui.view">
+        <field name="name">auto_service.visit.calendar</field>
+        <field name="model">auto_service.visit</field>
+        <field eval="2" name="priority"/>
+        <field name="arch" type="xml">
+            <calendar date_start="visit_date" date_stop="visit_date"
+                      string="Visits" mode="month">
+                <field name="name"/>
+                <field name="vehicle_id"/>
+                <field name="customer_id"/>
+                <field name="mechanic_id"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="auto_service_visit_graph" model="ir.ui.view">
+        <field name="name">auto_service.visit.graph</field>
+        <field name="model">auto_service.visit</field>
+        <field name="arch" type="xml">
+            <graph type="bar">
+                <field name="visit_date" interval="month"/>
+                <field name="job_id"/>
+                <field name="price" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="auto_service_visit_pivot" model="ir.ui.view">
+        <field name="name">auto_service.visit.pivot</field>
+        <field name="model">auto_service.visit</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="job_id" type="row"/>
+                <field name="price" type="measure"/>
+                <field name="duration" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="auto_service_visit_act_window" model="ir.actions.act_window">
+        <field name="name">Appointments (Visits)</field>
+        <field name="res_model">auto_service.visit</field>
+        <field name="view_mode">tree,form,calendar,graph,pivot</field>
+    </record>
+
+</odoo>

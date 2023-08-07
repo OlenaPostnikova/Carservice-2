@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="auto_service_mechanic_tree" model="ir.ui.view">
+        <field name="name">auto_service.mechanic.tree</field>
+        <field name="model">auto_service.mechanic</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="active"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="auto_service_mechanic_form" model="ir.ui.view">
+        <field name="name">auto_service.mechanic.form</field>
+        <field name="model">auto_service.mechanic</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="active"/>
+                        <field name="name"/>
+                    </group>
+                    <notebook>
+                        <page string="Works permitted">
+                            <field name="job_ids">
+                                <tree>
+                                    <field name="job_id"/>
+                                    <field name="mechanic_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Appointment/visit history">
+                            <field name="visit_ids">
+                                <tree>
+                                    <field name="vehicle_id"/>
+                                    <field name="visit_date"/>
+                                    <field name="job_id"/>
+                                    <field name="duration"/>
+                                    <field name="job_recommended_id"/>
+                                    <field name="mechanic_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+
+
+                </sheet>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="auto_service_mechanic_act_window" model="ir.actions.act_window">
+        <field name="name">Mechanics</field>
+        <field name="res_model">auto_service.mechanic</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

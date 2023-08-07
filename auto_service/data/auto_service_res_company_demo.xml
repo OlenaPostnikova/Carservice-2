@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <!--
+        Resource: res.company
+        -->
+        <record id="main_company" model="res.company">
+            <field name="mot_number">W589745982</field>
+            <field name="name">Manselton MOT Centre Ltd</field>
+            <field name="street">Cambrian Yard David St</field>
+            <field name="website">https://manseltonmot.co.uk/</field>
+            <field name="email">manselton_mot@hotmail.com</field>
+            <field name="phone">01792 458 046</field>
+            <field name="logo" type="base64" file="auto_service/static/img/manselton2.png"/>
+        </record>
+
+    </data>
+</odoo>
+

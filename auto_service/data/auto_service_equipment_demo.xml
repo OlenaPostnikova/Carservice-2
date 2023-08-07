@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="auto_service_equipment_1" model="auto_service.equipment" forcecreate="True">
+        <field name="name">Lifting stand #1</field>
+    </record>
+    <record id="auto_service_equipment_2" model="auto_service.equipment" forcecreate="True">
+        <field name="name">Lifting stand #2</field>
+    </record>
+    <record id="auto_service_equipment_3" model="auto_service.equipment" forcecreate="True">
+        <field name="name">Wheel alignment stand</field>
+    </record>
+    <record id="auto_service_equipment_4" model="auto_service.equipment" forcecreate="True">
+        <field name="name">Painting booth</field>
+    </record>
+    <record id="auto_service_equipment_5" model="auto_service.equipment" forcecreate="True">
+        <field name="name">Headlight stand</field>
+    </record>
+</odoo>
+
+

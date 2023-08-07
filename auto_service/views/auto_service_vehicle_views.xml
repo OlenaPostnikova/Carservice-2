@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="auto_service_vehicle_tree" model="ir.ui.view">
+        <field name="name">auto_service.vehicle.tree</field>
+        <field name="model">auto_service.vehicle</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="active"/>
+                <field name="vehicle_make_id"/>
+                <field name="model"/>
+                <field name="registration_number"/>
+                <field name="VIN"/>
+                <field name="customer_id"/>
+                <field name="date_next_MOT"/>
+                <field name="year_manufacture"/>
+                <field name="car_mileage"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="auto_service_vehicle_form" model="ir.ui.view">
+        <field name="name">auto_service.vehicle.form</field>
+        <field name="model">auto_service.vehicle</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="active"/>
+                        <field name="name"/>
+                        <field name="registration_number"/>
+                        <field name="vehicle_make_id"/>
+                        <field name="customer_id"/>
+                    </group>
+                    <group>
+                        <field name="model"/>
+                        <field name="VIN"/>
+                        <field name="date_next_MOT"/>
+                        <field name="year_manufacture"/>
+                        <field name="car_mileage"/>
+                    </group>
+                </group>
+                <notebook>
+                    <page string="Appointment/visit history">
+                        <field name="visit_ids">
+                            <tree>
+                                <field name="vehicle_id"/>
+                                <field name="visit_date"/>
+                                <field name="is_done"/>
+                                <field name="car_mileage"/>
+                                <field name="job_id"/>
+                                <field name="job_recommended_id"/>
+                                <field name="duration"/>
+                                <field name="price"/>
+                                <field name="mechanic_id"/>
+                                <field name="recommendation"/>
+                            </tree>
+                        </field>
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+
+
+
+    <record id="auto_service_vehicle_search" model="ir.ui.view">
+        <field name="name">auto_service.vehicle.search</field>
+        <field name="model">auto_service.vehicle</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="registration_number"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="auto_service_vehicle_act_window" model="ir.actions.act_window">
+        <field name="name">Vehicles</field>
+        <field name="res_model">auto_service.vehicle</field>
+        <field name="view_mode">tree,form,search,kanban</field>
+    </record>
+
+</odoo>

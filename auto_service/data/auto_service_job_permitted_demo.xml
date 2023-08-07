@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <!--
+    Diagnostics
+    -->
+    <record id="auto_service_job_permit_01" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_Diagnostic"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_1"/>
+    </record>
+    <record id="auto_service_job_permit_02" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_Diagnostic"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_2"/>
+    </record>
+    <record id="auto_service_job_permit_03" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_Diagnostic"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_3"/>
+    </record>
+
+    <!--
+    Change of oil
+    -->
+    <record id="auto_service_job_permit_13" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_oil_filter"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_1"/>
+    </record>
+    <record id="auto_service_job_permit_12" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_oil_filter"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_2"/>
+    </record>
+    <!--
+   Engine repair
+   -->
+    <record id="auto_service_job_permit_24" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_engine_repair"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_4"/>
+    </record>
+    <!--
+   Wheel alignment
+   -->
+    <record id="auto_service_job_permit_33" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_wheel_alignment"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_3"/>
+    </record>
+    <!--
+  Painting
+  -->
+    <record id="auto_service_job_permit_41" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_painting"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_1"/>
+    </record>
+    <!--
+   Straightening after damage
+   -->
+    <record id="auto_service_job_permit_51" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_general_repair"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_1"/>
+    </record>
+    <!--
+  Headlight adjustment
+  -->
+    <record id="auto_service_job_permit_61" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_headlight"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_1"/>
+    </record>
+    <record id="auto_service_job_permit_62" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_headlight"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_2"/>
+    </record>
+    <record id="auto_service_job_permit_63" model="auto_service.job_permitted" forcecreate="True">
+        <field name="job_id" ref="auto_service_job_headlight"/>
+        <field name="mechanic_id" ref="auto_service_mechanic_3"/>
+    </record>
+
+</odoo>
+
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="auto_service_timetable_mechanic_tree" model="ir.ui.view">
+        <field name="name">auto_service.timetable_mechanic.tree</field>
+        <field name="model">auto_service.timetable_mechanic</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="active"/>
+                <field name="mechanic_id"/>
+                <field name="date"/>
+                <field name="start_time"/>
+                <field name="end_time"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="auto_service_timetable_mechanic_form" model="ir.ui.view">
+        <field name="name">auto_service.timetable_mechanic.form</field>
+        <field name="model">auto_service.timetable_mechanic</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <group string="Name">
+                            <field name="mechanic_id"/>
+                            <field name="name"/>
+                            <field name="active"/>
+                        </group>
+                        <group string="Working hours">
+                            <field name="start_time_int"/>
+                            <field name="end_time_int"/>
+                        </group>
+                    </group>
+                    <group string="Date,time">
+                        <group>
+                            <field name="date"/>
+                        </group>
+                        <group>
+                            <field name="start_time"/>
+                            <field name="end_time"/>
+                        </group>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="auto_service_timetable_mechanic_calendar" model="ir.ui.view">
+        <field name="name">auto_service.timetable_mechanic.calendar</field>
+        <field name="model">auto_service.timetable_mechanic</field>
+        <field eval="2" name="priority"/>
+        <field name="arch" type="xml">
+            <calendar date_start="date" date_stop="date"
+                      string="Mechanic's timetable" mode="week">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="start_time"/>
+                <field name="end_time"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="auto_service_timetable_mechanic_act_window" model="ir.actions.act_window">
+        <field name="name">Timetable mechanic</field>
+        <field name="res_model">auto_service.timetable_mechanic</field>
+        <field name="view_mode">tree,form,calendar</field>
+    </record>
+
+</odoo>

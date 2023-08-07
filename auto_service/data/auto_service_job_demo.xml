@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="auto_service_job_MOT" model="auto_service.job" forcecreate="True">
+        <field name="name">MOT</field>
+        <field name="equipment_id" ref="auto_service_equipment_1"/>
+        <field name="duration">2</field>
+        <field name="price">45.00</field>
+    </record>
+    <record id="auto_service_job_full_service" model="auto_service.job" forcecreate="True">
+        <field name="name">Full service</field>
+        <field name="equipment_id" ref="auto_service_equipment_1"/>
+        <field name="duration">8</field>
+        <field name="price">176.00</field>
+    </record>
+    <record id="auto_service_job_Diagnostic" model="auto_service.job" forcecreate="True">
+        <field name="name">Diagnostic check</field>
+        <field name="duration">2</field>
+        <field name="price">49.00</field>
+    </record>
+    <record id="auto_service_job_oil_filter" model="auto_service.job" forcecreate="True">
+        <field name="name">Oil and Filter Change</field>
+        <field name="equipment_id" ref="auto_service_equipment_1"/>
+        <field name="duration">2</field>
+        <field name="price">108.00</field>
+    </record>
+    <record id="auto_service_job_brake_fluid" model="auto_service.job" forcecreate="True">
+        <field name="name">Brake Fluid Replacement</field>
+        <field name="equipment_id" ref="auto_service_equipment_1"/>
+        <field name="duration">2</field>
+        <field name="price">49.00</field>
+    </record>
+    <record id="auto_service_job_coolant" model="auto_service.job" forcecreate="True">
+        <field name="name">Coolant Change</field>
+        <field name="equipment_id" ref="auto_service_equipment_1"/>
+        <field name="duration">2</field>
+        <field name="price">49.00</field>
+    </record>
+    <record id="auto_service_job_engine_repair" model="auto_service.job" forcecreate="True">
+        <field name="name">Engine repair</field>
+        <field name="equipment_id" ref="auto_service_equipment_1"/>
+        <field name="comment">Get an estimate</field>
+    </record>
+    <record id="auto_service_job_wheel_alignment" model="auto_service.job" forcecreate="True">
+        <field name="name">Wheel alignment</field>
+        <field name="equipment_id" ref="auto_service_equipment_3"/>
+        <field name="duration">2</field>
+        <field name="price">39.00</field>
+    </record>
+    <record id="auto_service_job_painting" model="auto_service.job" forcecreate="True">
+        <field name="name">Painting</field>
+        <field name="equipment_id" ref="auto_service_equipment_4"/>
+        <field name="duration">8</field>
+        <field name="comment">Get an estimate</field>
+    </record>
+    <record id="auto_service_job_general_repair" model="auto_service.job" forcecreate="True">
+        <field name="name">General repair</field>
+        <field name="equipment_id" ref="auto_service_equipment_1"/>
+        <field name="duration">8</field>
+        <field name="comment">Get an estimate</field>
+    </record>
+    <record id="auto_service_job_headlight" model="auto_service.job" forcecreate="True">
+        <field name="name">Headlight adjustment</field>
+        <field name="equipment_id" ref="auto_service_equipment_5"/>
+        <field name="duration">2</field>
+        <field name="price">29.00</field>
+    </record>
+    <record id="auto_service_job_straightening" model="auto_service.job" forcecreate="True">
+        <field name="name">Straightening (after damage)</field>
+        <field name="equipment_id" ref="auto_service_equipment_1"/>
+        <field name="duration">8</field>
+        <field name="comment">Get an estimate</field>
+    </record>
+</odoo>
+
+

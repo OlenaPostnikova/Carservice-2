@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="auto_service_timetable_equipment_tree" model="ir.ui.view">
+        <field name="name">auto_service.timetable_equipment.tree</field>
+        <field name="model">auto_service.timetable_equipment</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="active"/>
+                <field name="equipment_id"/>
+                <field name="date"/>
+                <field name="start_time"/>
+                <field name="end_time"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="auto_service_timetable_equipment_form" model="ir.ui.view">
+        <field name="name">auto_service.timetable_equipment.form</field>
+        <field name="model">auto_service.timetable_equipment</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="equipment_id"/>
+                        <field name="name"/>
+                        <field name="active"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="date"/>
+                        </group>
+                        <group>
+                            <field name="start_time"/>
+                            <field name="end_time"/>
+                        </group>
+                     </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="auto_service_timetable_equipment_calendar" model="ir.ui.view">
+        <field name="name">auto_service.timetable_equipment.calendar</field>
+        <field name="model">auto_service.timetable_equipment</field>
+        <field eval="2" name="priority"/>
+        <field name="arch" type="xml">
+            <calendar date_start="date" date_stop="date"
+                    string="Equipment maintenance timetable" mode="week">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="start_time"/>
+                <field name="end_time"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="auto_service_timetable_equipment_act_window" model="ir.actions.act_window">
+        <field name="name">Equipment maintenance timetable</field>
+        <field name="res_model">auto_service.timetable_equipment</field>
+        <field name="view_mode">tree,form,calendar</field>
+    </record>
+
+</odoo>

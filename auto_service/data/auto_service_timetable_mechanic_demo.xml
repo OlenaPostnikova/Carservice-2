@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="auto_service_timetable_mechanic_1" model="auto_service.timetable_mechanic" forcecreate="True">
+        <field name="name">Petrenko Ivan, 1</field>
+        <field name="mechanic_id" ref="auto_service_mechanic_1"/>
+        <field name="date" eval="datetime.now()"/>
+        <field name="start_time" eval="datetime.now()-timedelta(hours=5)"/>
+        <field name="end_time" eval="datetime.now()+timedelta(hours=5)"/>
+        <field name="start_time_int">10</field>
+        <field name="end_time_int">18</field>
+    </record>
+    <record id="auto_service_timetable_mechanic_2" model="auto_service.timetable_mechanic" forcecreate="True">
+        <field name="name">Dovgodko Viktor, 1</field>
+        <field name="mechanic_id" ref="auto_service_mechanic_2"/>
+        <field name="date" eval="datetime.now()"/>
+        <field name="start_time" eval="datetime.now()-timedelta(hours=5)"/>
+        <field name="end_time" eval="datetime.now()+timedelta(hours=5)"/>
+        <field name="start_time_int">10</field>
+        <field name="end_time_int">18</field>
+    </record>
+    <record id="auto_service_timetable_mechanic_3" model="auto_service.timetable_mechanic" forcecreate="True">
+        <field name="name">Dianov Pavlo, 1</field>
+        <field name="mechanic_id" ref="auto_service_mechanic_3"/>
+        <field name="date" eval="datetime.now()"/>
+        <field name="start_time" eval="datetime.now()-timedelta(hours=5)"/>
+        <field name="end_time" eval="datetime.now()+timedelta(hours=5)"/>
+        <field name="start_time_int">10</field>
+        <field name="end_time_int">18</field>
+    </record>
+    <record id="auto_service_timetable_mechanic_4" model="auto_service.timetable_mechanic" forcecreate="True">
+        <field name="name">Tarasov Olexiy, 1</field>
+        <field name="mechanic_id" ref="auto_service_mechanic_4"/>
+        <field name="date" eval="datetime.now()"/>
+        <field name="start_time" eval="datetime.now()-timedelta(hours=5)"/>
+        <field name="end_time" eval="datetime.now()+timedelta(hours=5)"/>
+        <field name="start_time_int">10</field>
+        <field name="end_time_int">18</field>
+    </record>
+
+</odoo>

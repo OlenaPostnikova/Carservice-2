@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="auto_service_job_tree" model="ir.ui.view">
+        <field name="name">auto_service.job.tree</field>
+        <field name="model">auto_service.job</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="active"/>
+                <field name="name"/>
+                <field name="duration"/>
+                <field name="price"/>
+                <field name="comment"/>
+                <field name="equipment_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="auto_service_job_form" model="ir.ui.view">
+        <field name="name">auto_service.job.form</field>
+        <field name="model">auto_service.job</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="active"/>
+                        <field name="name"/>
+                        <field name="duration"/>
+                        <field name="price"/>
+                    </group>
+                    <group>
+                        <field name="equipment_id"/>
+                        <field name="comment"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="auto_service_job_kanban" model="ir.ui.view">
+        <field name="name">auto_service.job.kanban</field>
+        <field name="model">auto_service.job</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile" default_group_by="equipment_id" create="false">
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div>
+                                <strong>
+                                    <field name="name"/>
+                                    <br/>
+                                    <field name="equipment_id"/>
+                                    <br/>
+                                    <field name="duration"/>
+                                    <br/>
+                                    <field name="price"/>
+                                </strong>
+
+
+                                <br/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="auto_service_job_pivot" model="ir.ui.view">
+        <field name="name">auto_service.job.pivot</field>
+        <field name="model">auto_service.job</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="name" type="row"/>
+                <field name="price" type="measure"/>
+                <field name="duration" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="auto_service_job_act_window" model="ir.actions.act_window">
+        <field name="name">Services and jobs</field>
+        <field name="res_model">auto_service.job</field>
+        <field name="view_mode">tree,form,pivot,kanban</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!--
+         Resource: res.partner.category
+         -->
+        <record id="res_partner_category_15" model="res.partner.category">
+            <field name="name">Car services</field>
+            <field name="color" eval="7"/>
+        </record>
+
+        <!--
+        Resource: res.partner
+        -->
+        <record id="res_partner_auto_service_1" model="res.partner">
+            <field name="name">Olena Postnikova</field>
+            <field name="email">olena.postnikova@example.com</field>
+            <field name="phone">(44)-7455-890621</field>
+            <field name="city">Kiev</field>
+            <field name="is_auto_service_customer">True</field>
+            <field name="customer_details">New customer</field>
+            <field name="image_1920" type="base64" file="auto_service/static/img/res_partner_1.png"/>
+        </record>
+        <record id="res_partner_auto_service_2" model="res.partner">
+            <field name="name">Ivan Kusmin</field>
+            <field name="email">ivan.kusmin@example.com</field>
+            <field name="phone">(44)-7455-890625</field>
+            <field name="city">Kiev</field>
+            <field name="is_auto_service_customer">True</field>
+            <field name="customer_details">New customer</field>
+            <field name="image_1920" type="base64" file="auto_service/static/img/res_partner_2.png"/>
+        </record>
+        <record id="res_partner_auto_service_3" model="res.partner">
+            <field name="name">Oksana Zotova</field>
+            <field name="email">oksana.zotova@example.com</field>
+            <field name="phone">(44)-7455-890622</field>
+            <field name="city">Kiev</field>
+            <field name="is_auto_service_customer">True</field>
+            <field name="customer_details">New customer</field>
+            <field name="image_1920" type="base64" file="auto_service/static/img/res_partner_3.png"/>
+        </record>
+    </data>
+</odoo>
+

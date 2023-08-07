@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="auto_service_mechanic_1" model="auto_service.mechanic" forcecreate="True">
+        <field name="name">Petrenko Ivan</field>
+    </record>
+    <record id="auto_service_mechanic_2" model="auto_service.mechanic" forcecreate="True">
+        <field name="name">Dovgodko Viktor</field>
+    </record>
+    <record id="auto_service_mechanic_3" model="auto_service.mechanic" forcecreate="True">
+        <field name="name">Dianov Pavlo</field>
+    </record>
+    <record id="auto_service_mechanic_4" model="auto_service.mechanic" forcecreate="True">
+        <field name="name">Tarasov Olexiy</field>
+    </record>
+
+</odoo>
+
+

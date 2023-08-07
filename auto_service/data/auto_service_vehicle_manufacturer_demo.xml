@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="auto_service_vehicle_manufacturer_volvo" model="auto_service.vehicle_manufacturer" forcecreate="True">
+        <field name="name">Volvo</field>
+    </record>
+    <record id="auto_service_vehicle_manufacturer_mercedes" model="auto_service.vehicle_manufacturer" forcecreate="True">
+        <field name="name">Mercedes</field>
+    </record>
+    <record id="auto_service_vehicle_manufacturer_ford" model="auto_service.vehicle_manufacturer" forcecreate="True">
+        <field name="name">Ford</field>
+    </record>
+    <record id="auto_service_vehicle_manufacturer_subaru" model="auto_service.vehicle_manufacturer" forcecreate="True">
+        <field name="name">Subaru</field>
+    </record>
+    <record id="auto_service_vehicle_manufacturer_toyota" model="auto_service.vehicle_manufacturer" forcecreate="True">
+        <field name="name">Toyota</field>
+    </record>
+</odoo>

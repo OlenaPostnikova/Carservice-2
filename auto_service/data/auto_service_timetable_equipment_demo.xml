@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+<!--    <record id="auto_service_timetable_equipment_1" model="auto_service.timetable_equipment" forcecreate="True">-->
+<!--        <field name="name">Lifting stand #1</field>-->
+<!--        <field name="mechanic_id" ref="auto_service_equipment_1"/>-->
+<!--        <field name="date">datetime.now()</field>-->
+<!--        <field name="start_time">datetime.now()- timedelta(hours=5)</field>-->
+<!--        <field name="end_time">datetime.now()+ timedelta(hours=5)</field>-->
+<!--        <field name="start_time_int">5</field>-->
+<!--        <field name="end_time_int">5</field>-->
+<!--    </record>-->
+<!--    <record id="auto_service_timetable_mechanic_2" model="auto_service.job" forcecreate="True">-->
+<!--        <field name="name">Petrenko Ivan, 2</field>-->
+<!--        <field name="mechanic_id" ref="auto_service_mechanic_1"/>-->
+<!--        <field name="date">datetime.now()</field>-->
+<!--        <field name="start_time">datetime.now() + timedelta(hours=24) - timedelta(hours=5)</field>-->
+<!--        <field name="end_time">datetime.now() + timedelta(hours=24) + timedelta(hours=5)</field>-->
+<!--        <field name="start_time_int">5</field>-->
+<!--        <field name="end_time_int">5</field>-->
+<!--    </record>-->
+<!--    <record id="auto_service_timetable_mechanic_2" model="auto_service.job" forcecreate="True">-->
+<!--        <field name="name">Petrenko Ivan, 2</field>-->
+<!--        <field name="mechanic_id" ref="auto_service_mechanic_1"/>-->
+<!--        <field name="date">datetime.now()</field>-->
+<!--        <field name="start_time">datetime.now() + timedelta(hours=24) - timedelta(hours=5)</field>-->
+<!--        <field name="end_time">datetime.now() + timedelta(hours=24) + timedelta(hours=5)</field>-->
+<!--        <field name="start_time_int">5</field>-->
+<!--        <field name="end_time_int">5</field>-->
+<!--    </record>-->
+
+</odoo>

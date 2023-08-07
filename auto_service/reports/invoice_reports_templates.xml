@@ -1,0 +1,204 @@
+<odoo>
+
+    <template id="logo_template">
+        <div style="text-align: center; margin:20px">
+            <img t-att-src="image_data_uri(user.company_id.logo)"
+                 alt="Logo"/>
+        </div>
+        <div style=" display: flex; flex-direction: row; gap: 40px;">
+            <div style="display: flex; flex-direction: column; width: 40%;">
+                <p style=" text-align: center; font-weight: 900;">Cash Customer
+                </p>
+                <p style=" margin-top: 87px;text-align: right;">
+                    <span style="font-weight: 900;">No.</span>
+                    CASH
+                </p>
+            </div>
+            <div style="width: 60%;display: flex;justify-content: space-between; gap: 20px;">
+                <div>
+                    <p style="font-weight: 900;">
+                        <span t-esc="user.company_id.name"/>
+                    </p>
+
+                    <p style="margin:0;"><span t-esc="user.company_id.city"/></p>
+                    <p style="margin:0;"><span t-esc="user.company_id.street"/></p>
+                    <p style="margin:0;">Tel: <span t-esc="user.company_id.phone"/></p>
+                    <p style="margin:0">Email: <span t-esc="user.company_id.email"/></p>
+                    <p style="margin:0">Web: <span t-esc="user.company_id.website"/></p>
+                    <p style="margin:0">MOT: <span t-esc="user.company_id.mot_number"/></p>
+                </div>
+                <div style="text-align: right;">
+                    <p style="font-weight: 900;margin:0;">Invoice <span t-esc="doc.id"/></p>
+                    <p style="margin:0;">Date: <span t-esc="doc.visit_date"/></p>
+                    <p style="margin:0;">Technician: <span t-esc="doc.mechanic_id.name"/></p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="vehicle_info">
+        <div style="display: flex; flex-direction: row; gap: 50px;">
+            <div style="margin-top: 30px; width: 8%; text-align: right;">Vehicle</div>
+            <div style="width: 92%;">
+                <hr></hr>
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <p>Registration: <span t-esc="doc.vehicle_id.registration_number"/></p>
+                        <p><span t-esc="doc.vehicle_id.vehicle_make_id.name"/>
+                        <span t-esc="doc.vehicle_id.model"/></p>
+                    </div>
+                    <div style="text-align: left;">
+                        <p>Mileage: <span t-esc="doc.vehicle_id.car_mileage"/></p>
+                        <p>VIN: <span t-esc="doc.vehicle_id.VIN"/></p>
+                    </div>
+                </div>
+                <hr></hr>
+            </div>
+        </div>
+    </template>
+
+    <template id="work_performed">
+        <div style="display: flex; flex-direction: row; gap: 50px;">
+
+            <div style="margin-top: 5px; width: 8%; text-align: right;">Work performed</div>
+
+            <div style="width: 92%;">
+
+                <p style="font-weight: 900;">Labour</p>
+
+                <hr></hr>
+
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <p style="font-weight: 900;">Labour</p>
+                        <p><span t-esc="doc.job_id.name"/></p>
+                    </div>
+                    <div style="display: flex;gap: 100px;">
+
+                        <div style="display: flex;gap: 60px;">
+                            <div style="text-align: left;">
+                                <p style="font-weight: 900;">HRS</p>
+                                <p style="text-align: right;"><span t-esc="doc.duration"/></p>
+                            </div>
+                            <div style="text-align: left;">
+                                <p style="font-weight: 900;">Unit Price</p>
+                                <p style="text-align: right;"><span t-esc="doc.price"/></p>
+                            </div>
+                        </div>
+
+
+                        <div style="display: flex;gap: 60px;">
+                            <div style="text-align: left;">
+                                <p style="font-weight: 900;">VAT %</p>
+                                <p style="text-align: right;">0.0</p>
+                            </div>
+                            <div style="text-align: left;">
+                                <p style="font-weight: 900;">Net Total</p>
+                                <p style="text-align: right;"><span t-esc="doc.duration * doc.price"/></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div
+                    style="display: flex; gap: 60px; justify-content: end; background-color: gray; border-bottom: 2px solid #000; padding: 5px 0;">
+                    <span>Labour SubTotal</span>
+                    <span><span t-esc="doc.duration * doc.price"/></span>
+                </div>
+
+            </div>
+        </div>
+    </template>
+
+    <template id="invoice_total">
+        <div style="display: flex; flex-direction: row; gap: 50px; margin-bottom: 30px;">
+
+            <div style="margin-top: 30px; width: 8%; text-align: right;">Invoice Total</div>
+
+            <div style="width: 92%;">
+
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <div style="padding-top: 10px;">VAT</div>
+            <div style="display: flex; gap: 20px;">
+                            <div >
+                                <p style="font-weight: 900;">Code</p>
+                                <p>(0)</p>
+                            </div>
+                            <div>
+                                <p style="font-weight: 900;">Rate %</p>
+                                <p>0.00</p>
+                            </div>
+                            <div>
+                                <p style="font-weight: 900;">Net Total</p>
+                                <p><span t-esc="doc.duration * doc.price"/></p>
+                            </div>
+                            <div>
+                                <p style="font-weight: 900;">VAT Total</p>
+                                <p>0.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="padding-top: 10px;">
+                        <div style="display: flex; gap: 40px; justify-content: space-between;">
+                            <div>Labour</div>
+                            <div><span t-esc="doc.duration * doc.price"/></div>
+                        </div>
+
+                        <div style="display: flex; gap: 40px; justify-content: space-between; padding-top: 10px;">
+                            <div>Parts</div>
+                            <div>0.00</div>
+                        </div>
+
+                        <div style="display: flex; gap: 40px; justify-content: space-between; padding-top: 40px;">
+                            <div>VAT</div>
+                            <div style="text-align: left;">0.00</div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div
+                    style="display: flex; gap: 60px; justify-content: end; background-color: gray; border-bottom: 2px solid #000; padding: 10px 0;">
+                    <span>Invoice Total</span>
+                    <span><span t-esc="doc.duration * doc.price"/></span>
+                </div>
+
+            </div>
+        </div>
+    </template>
+
+    <template id="advisories">
+        <div style="display: flex; flex-direction: row; gap: 50px;">
+
+            <div style="margin-top: 30px; width: 8%; text-align: right;">Customer Advisories</div>
+
+            <div style="width: 92%;">
+                <hr></hr>
+                <div style="font-weight: 900;">Customer Advisories</div>
+                <div><span t-esc="doc.recommendation"/></div>
+            </div>
+
+        </div>
+    </template>
+
+    <template id="report_invoice">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="auto_service.logo_template"/>
+                <br/>
+                <t t-call="auto_service.vehicle_info"/>
+                <br/>
+                <t t-call="auto_service.work_performed"/>
+                <br/>
+                <t t-call="auto_service.invoice_total"/>
+                <br/>
+                <t t-call="auto_service.advisories"/>
+            </t>
+        </t>
+    </template>
+</odoo>
+

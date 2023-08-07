@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="auto_service_equipment_tree" model="ir.ui.view">
+        <field name="name">auto_service.equipment.tree</field>
+        <field name="model">auto_service.equipment</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="active"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="auto_service_equipment_form" model="ir.ui.view">
+        <field name="name">auto_service.equipment.form</field>
+        <field name="model">auto_service.equipment</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="active"/>
+                    <field name="name"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="auto_service_equipment_act_window" model="ir.actions.act_window">
+        <field name="name">Equipment</field>
+        <field name="res_model">auto_service.equipment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
